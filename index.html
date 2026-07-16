@@ -331,6 +331,7 @@
     .feature { position: relative; min-height: 245px; padding: 27px; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
     .feature:nth-child(1), .feature:nth-child(4) { grid-column: span 7; }
     .feature:nth-child(2), .feature:nth-child(3) { grid-column: span 5; }
+    .feature:nth-child(5), .feature:nth-child(6) { grid-column: span 6; }
     .feature-kicker { margin-bottom: 55px; color: var(--cyan); font: 700 .65rem/1 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .12em; }
     .feature h3 { margin-bottom: 10px; font-size: 1.4rem; }
     .feature p { max-width: 570px; margin: 0; color: var(--muted); line-height: 1.6; }
@@ -530,7 +531,7 @@
               </div>
             </div>
           </div>
-          <div class="floating-chip">25 EFFECTS</div>
+          <div class="floating-chip">29 EFFECTS</div>
           <div class="floating-note"><span>●</span> 100% OFFLINE</div>
         </div>
       </div>
@@ -544,8 +545,8 @@
           <p>Graphic Runner brings a deep effect stack, fast previews, and production exports into one focused desktop workspace—built for posters, merch, logos, social graphics, and anything that needs more impact.</p>
         </div>
         <div class="stats reveal" aria-label="Graphic Runner at a glance">
-          <div class="stat"><strong>25</strong><span>signature effects</span></div>
-          <div class="stat"><strong>24</strong><span>curated color palettes</span></div>
+          <div class="stat"><strong>29</strong><span>signature effects</span></div>
+          <div class="stat"><strong>25</strong><span>curated color palettes</span></div>
           <div class="stat"><strong>4×</strong><span>high-resolution export</span></div>
           <div class="stat"><strong>0</strong><span>cloud uploads required</span></div>
         </div>
@@ -597,8 +598,8 @@
           <p>Powerful enough to explore, direct enough to keep you moving.</p>
         </div>
         <div class="workflow-grid">
-          <article class="step reveal"><h3>Start with your mark</h3><p>Type a phrase, upload a logo, or choose from 16 built-in Y2K symbols. Adjust scale, tracking, rotation, warp, and more.</p></article>
-          <article class="step reveal"><h3>Build the look</h3><p>Pick an effect, tune its controls, recolor with curated palettes, then stack grit, dither, CRT, depth, glow, tint, and grading.</p></article>
+          <article class="step reveal"><h3>Start with your mark</h3><p>Type a phrase, upload a logo, choose from 16 built-in symbols, or reshape individual letters in Type Lab.</p></article>
+          <article class="step reveal"><h3>Build the look</h3><p>Combine independent layers, position each element, paint Hide/Reveal masks, then stack effects, color, grit, dither, CRT, depth, and glow.</p></article>
           <article class="step reveal"><h3>Take it anywhere</h3><p>Export sharp PNG artwork up to 4× resolution, create a spinning GIF, or prepare color-managed work for print.</p></article>
         </div>
       </div>
@@ -635,6 +636,16 @@
             <h3>Fast preview, full-quality finish</h3>
             <p>Slider drags render at reduced resolution for responsiveness, then snap back to full quality when you stop—so experimentation stays fluid.</p>
           </article>
+          <article class="feature reveal">
+            <p class="feature-kicker">Layer editing</p>
+            <h3>Build complex compositions</h3>
+            <p>Add, duplicate, reorder, hide, and position independent layers. Paint per-layer masks with adjustable size, hardness, and opacity.</p>
+          </article>
+          <article class="feature reveal">
+            <p class="feature-kicker">Type Lab</p>
+            <h3>Reshape the letters themselves</h3>
+            <p>Edit vector glyph outlines directly, drag individual control points, reset letters, and run the custom typography through any effect.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -642,7 +653,7 @@
     <section id="download" aria-labelledby="download-title">
       <div class="shell">
         <div class="download-card reveal">
-          <p class="eyebrow">Graphic Runner v0.0.5 Public Beta</p>
+          <p class="eyebrow">Graphic Runner v0.0.6 Public Beta</p>
           <h2 id="download-title">Ready to make something <span class="hot">impossible to ignore?</span></h2>
           <p>Graphic Runner is built for Windows and includes its own runtime. No separate Java installation is required.</p>
           <a class="button primary" id="downloadButton" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe" data-download-url="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe">Download for Windows
@@ -656,7 +667,7 @@
 
   <footer>
     <div class="footer-row shell">
-      <span>© 2026 Patrick Jamison. Graphic Runner v0.0.5 Public Beta.</span>
+      <span>© 2026 Patrick Jamison. Graphic Runner v0.0.6 Public Beta.</span>
       <div class="footer-links"><a href="#overview">About</a><a href="#features">Privacy</a><a href="#home">Back to top ↑</a></div>
     </div>
   </footer>
