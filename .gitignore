@@ -1,0 +1,12 @@
+# Release binaries belong in GitHub Releases, not in the repository history.
+*.exe
+*.msi
+*.jar
+SHA256SUMS.txt
+
+# Development and build output must never be published here.
+src/
+out/
+dist/
+installer/input/
+tools/
