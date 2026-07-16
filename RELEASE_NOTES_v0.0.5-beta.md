@@ -5,6 +5,7 @@ This is the first public Windows beta of Graphic Runner.
 ## Included
 
 - Offline Windows desktop application with bundled Java runtime
+- Unified Ember branding with the new GR application and installer icon
 - Text, logo, and symbol input modes
 - 25 graphic effects with adjustable controls
 - PNG, GIF, and CMYK TIFF export workflows
@@ -26,6 +27,6 @@ The installers are not yet digitally signed, so Windows may display an unknown-p
 ## SHA-256
 
 ```text
-B05EEDD79624D57FC45825621F5CDCF2340C3D96E4B7B8B805E243ADB0FDA255  GraphicRunnerInstallBeta.exe
-85A6235712BB149E1B9C981F01AF85367C6B5C55FEC1C75A5DE0D24E51C7E6D3  GraphicRunnerInstallBeta.msi
+A9925687B731E70FC3F97632E3224AA04134C3FD87BA8634F5938C8E6BA6B106  GraphicRunnerInstallBeta.exe
+03D9B9CF9F5EF32AA9C55EFF664F037AF1301A751A11A7BCB9EDFD1214DF334E  GraphicRunnerInstallBeta.msi
 ```
