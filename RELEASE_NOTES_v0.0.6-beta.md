@@ -40,6 +40,18 @@ The installers are not yet digitally signed, so Windows may display an
 unknown-publisher or SmartScreen warning. Download only from the official
 `Linedrawguy/graphic-runner` repository and verify the SHA-256 checksum.
 
+After verifying the checksum, select **More info**, confirm the app name, and
+select **Run anyway**. Do not disable Microsoft Defender or SmartScreen.
+
+## Linux through Bottles and Wine
+
+The Windows installer has been successfully tested on Linux through Bottles
+using its Wine runner. Create a 64-bit **Application** bottle, choose **Run
+Executable**, select `GraphicRunnerInstallBeta.exe`, and launch the installed
+app from the bottle's **Programs** list. Direct Wine users can run
+`wine GraphicRunnerInstallBeta.exe`. This is a compatibility setup rather than
+a native Linux build, so behavior can vary by distribution and Wine runner.
+
 ## Beta feedback
 
 Report bugs, request features, or share your experience through the

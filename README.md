@@ -10,6 +10,34 @@ Download the latest Windows installer from the [latest GitHub release](https://g
 - `GraphicRunnerInstallBeta.msi` is provided for managed or advanced installation.
 - No separate Java installation is required.
 
+## Windows installation
+
+1. Download `GraphicRunnerInstallBeta.exe` from the latest release.
+2. Verify its SHA-256 checksum against the value below.
+3. Open the installer.
+4. Because this beta is not yet digitally signed, Windows may show **Windows protected your PC**. After verifying the checksum, select **More info**, confirm the app name, and select **Run anyway**.
+5. Complete installation, accept the beta license, and launch Graphic Runner from its shortcut or Start menu entry.
+
+Do not disable Microsoft Defender or SmartScreen. A trusted code-signing identity is the permanent fix for the unsigned-publisher warning.
+
+## Linux installation through Bottles and Wine
+
+Graphic Runner is currently packaged for Windows rather than as a native Linux application. The Windows build has been successfully tested on Linux through [Bottles](https://usebottles.com/) using its Wine runner.
+
+1. Install the supported Bottles Flatpak from [Flathub](https://flathub.org/apps/com.usebottles.bottles), open Bottles, and complete its first-run setup.
+2. Create a new 64-bit bottle named **Graphic Runner** using the **Application** environment.
+3. Open the bottle, choose **Run Executable**, and select `GraphicRunnerInstallBeta.exe`.
+4. Complete the installer inside the bottle.
+5. Open **Programs**, refresh the list if needed, and launch Graphic Runner. If it is not detected automatically, choose **Add** and select the installed `GraphicRunner.exe`.
+
+For direct Wine use, install a current Wine build for your distribution and run:
+
+```bash
+wine GraphicRunnerInstallBeta.exe
+```
+
+Bottles is recommended because it keeps the Wine environment isolated and easier to manage. Linux behavior can vary by distribution, desktop environment, and Wine runner.
+
 This public repository contains the Graphic Runner website and compiled release downloads. The application source code is private and is not included.
 
 ## Verify your download

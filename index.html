@@ -341,6 +341,24 @@
     .file-stack { position: absolute; right: 28px; top: 27px; display: flex; gap: 7px; }
     .file-stack span { padding: 8px 10px; color: #081014; background: var(--lime); border-radius: 7px; font: 900 .6rem/1 ui-monospace, monospace; }
 
+    .install-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .install-card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255,255,255,.05), rgba(255,255,255,.018));
+    }
+    .install-card-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+    .install-card h3 { margin: 0; font-size: 1.55rem; letter-spacing: -.04em; }
+    .platform-badge { padding: 7px 9px; color: var(--cyan); border: 1px solid var(--line-hot); border-radius: 999px; font: 800 .62rem/1 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .install-card > p, .install-card li { color: var(--muted); line-height: 1.65; }
+    .install-card ol { margin: 18px 0 0; padding-left: 22px; }
+    .install-card li + li { margin-top: 10px; }
+    .install-card a { color: var(--cyan); }
+    .install-card code { padding: 3px 6px; color: #ffd6b6; background: #190b06; border: 1px solid var(--line); border-radius: 6px; font-size: .82em; overflow-wrap: anywhere; }
+    .install-note { margin-top: 20px; padding: 16px; color: #d3b49e; background: rgba(255,126,27,.07); border-left: 3px solid var(--cyan); border-radius: 8px; line-height: 1.6; }
+    .checksum { display: block; margin-top: 8px; padding: 10px; color: #ffd6b6; background: #120906; border: 1px solid var(--line); border-radius: 8px; font: 600 .69rem/1.5 ui-monospace, monospace; overflow-wrap: anywhere; }
+
     .download-card {
       position: relative;
       padding: clamp(36px, 7vw, 80px);
@@ -364,7 +382,7 @@
     .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
     .footer-row a { text-decoration: none; }
     .footer-row a:hover { color: var(--text); }
-    .footer-links { display: flex; gap: 18px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
 
     .toast {
       position: fixed;
@@ -398,6 +416,7 @@
       .hero-stage { max-width: 760px; }
       .effect-preview { position: relative; top: 0; min-height: 450px; }
       .workflow-grid { grid-template-columns: 1fr; }
+      .install-grid { grid-template-columns: 1fr; }
       .step { min-height: 250px; }
       .step::before { margin-bottom: 45px; }
     }
@@ -444,6 +463,8 @@
       .effect-button { grid-template-columns: 48px 1fr; }
       .effect-button em { display: none; }
       .effect-thumb { width: 48px; }
+      .install-card { padding: 22px; }
+      .install-card-header { align-items: flex-start; flex-direction: column; }
       .stats { grid-template-columns: 1fr; }
       .stat { border-right: 0; border-bottom: 1px solid var(--line); }
       .stat:last-child { border-bottom: 0; }
@@ -474,6 +495,7 @@
         <a href="#effects">Effects</a>
         <a href="#workflow">How it works</a>
         <a href="#features">Features</a>
+        <a href="#install">Install</a>
         <a href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Feedback</a>
         <a class="nav-cta" href="#download">Download</a>
       </div>
@@ -652,19 +674,56 @@
       </div>
     </section>
 
+    <section id="install" aria-labelledby="install-title">
+      <div class="shell">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Installation guide</p>
+          <h2 id="install-title">Install on Windows or <span class="hot">run through Wine.</span></h2>
+          <p>The current beta is packaged for Windows. It also runs on Linux through Wine, with Bottles providing the easiest tested setup.</p>
+        </div>
+        <div class="install-grid">
+          <article class="install-card reveal">
+            <div class="install-card-header"><h3>Windows 10/11</h3><span class="platform-badge">Native</span></div>
+            <p>The installer includes Graphic Runner's Java runtime, so no separate Java installation is needed.</p>
+            <ol>
+              <li>Download <code>GraphicRunnerInstallBeta.exe</code> from this page.</li>
+              <li>Verify the installer checksum if desired:<span class="checksum">DAB122180897319829DEB4BFE37B888F726932AFCFB2EAD74D34A6438BBBFA8A</span></li>
+              <li>Open the installer. Because this beta is not yet digitally signed, Windows may show <strong>Windows protected your PC</strong>.</li>
+              <li>After verifying the checksum, select <strong>More info</strong>, confirm the app name, then select <strong>Run anyway</strong>.</li>
+              <li>Complete installation, accept the beta license, and launch Graphic Runner from its shortcut or Start menu entry.</li>
+            </ol>
+            <div class="install-note"><strong>Why the warning?</strong> SmartScreen treats new unsigned applications cautiously. The permanent fix is a trusted code-signing identity; disabling Windows security is not required or recommended.</div>
+          </article>
+
+          <article class="install-card reveal">
+            <div class="install-card-header"><h3>Linux with Bottles</h3><span class="platform-badge">Tested via Wine</span></div>
+            <p>Graphic Runner is not a native Linux package yet. The Windows build has been successfully tested through <a href="https://usebottles.com/" target="_blank" rel="noopener">Bottles</a> using its Wine runner.</p>
+            <ol>
+              <li>Install the supported Bottles Flatpak from <a href="https://flathub.org/apps/com.usebottles.bottles" target="_blank" rel="noopener">Flathub</a>, then open Bottles and finish its first-run setup.</li>
+              <li>Create a new bottle named <strong>Graphic Runner</strong> and choose the <strong>Application</strong> environment with 64-bit architecture.</li>
+              <li>Open that bottle, choose <strong>Run Executable</strong>, and select <code>GraphicRunnerInstallBeta.exe</code>.</li>
+              <li>Complete the Windows installer inside the bottle. Open <strong>Programs</strong>, select <strong>Refresh</strong> if needed, then press Play beside Graphic Runner.</li>
+              <li>If Graphic Runner is not detected automatically, choose <strong>Add</strong> in Programs and select its installed <code>GraphicRunner.exe</code>.</li>
+            </ol>
+            <div class="install-note"><strong>Direct Wine alternative:</strong> install a current Wine build for your distribution, then run <code>wine GraphicRunnerInstallBeta.exe</code>. Bottles is recommended because it keeps the Wine environment isolated and easier to manage. Linux behavior can vary by distribution, desktop environment, and Wine runner.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="download" aria-labelledby="download-title">
       <div class="shell">
         <div class="download-card reveal">
           <p class="eyebrow">Graphic Runner v0.0.6 Public Beta</p>
           <h2 id="download-title">Ready to make something <span class="hot">impossible to ignore?</span></h2>
-          <p>Graphic Runner is built for Windows and includes its own runtime. No separate Java installation is required.</p>
+          <p>Graphic Runner includes its own Windows runtime and has also been successfully tested on Linux through Bottles and Wine.</p>
           <div class="download-actions">
             <a class="button primary" id="downloadButton" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe" data-download-url="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe">Download for Windows
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <a class="button" href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Send Beta Feedback</a>
           </div>
-          <div class="download-notes"><span>Windows 10/11</span><span>Installer includes runtime</span><span>Free personal &amp; commercial design use</span></div>
+          <div class="download-notes"><span>Windows 10/11 native</span><span>Linux via Bottles/Wine</span><span>Installer includes runtime</span><span>Free personal &amp; commercial design use</span></div>
         </div>
       </div>
     </section>
@@ -673,7 +732,7 @@
   <footer>
     <div class="footer-row shell">
       <span>© 2026 Patrick Jamison. Graphic Runner v0.0.6 Public Beta.</span>
-      <div class="footer-links"><a href="#overview">About</a><a href="#features">Privacy</a><a href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Feedback</a><a href="#home">Back to top ↑</a></div>
+      <div class="footer-links"><a href="#overview">About</a><a href="#features">Privacy</a><a href="#install">Install</a><a href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Feedback</a><a href="#home">Back to top ↑</a></div>
     </div>
   </footer>
 
