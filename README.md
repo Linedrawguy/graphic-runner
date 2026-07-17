@@ -37,6 +37,8 @@ Graphic Runner operates locally and does not upload your artwork. See the licens
 
 ## Support
 
-Security reports and beta feedback: `taskmaster@trunner.net`
+Send product feedback through the [Graphic Runner Beta Feedback form](https://forms.gle/xRCnM3ARTG7ps8CYA).
+
+Security reports and private feedback: `taskmaster@trunner.net`
 
 © 2026 Patrick Jamison. All rights reserved. Graphic Runner is proprietary freeware, not open-source software.

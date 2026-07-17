@@ -40,6 +40,11 @@ The installers are not yet digitally signed, so Windows may display an
 unknown-publisher or SmartScreen warning. Download only from the official
 `Linedrawguy/graphic-runner` repository and verify the SHA-256 checksum.
 
+## Beta feedback
+
+Report bugs, request features, or share your experience through the
+[Graphic Runner Beta Feedback form](https://forms.gle/xRCnM3ARTG7ps8CYA).
+
 ## SHA-256
 
 ```text
