@@ -42,11 +42,11 @@ This public repository contains the Graphic Runner website and compiled release 
 
 ## Verify your download
 
-For public beta v0.0.6:
+For public beta v0.0.7:
 
 ```text
-DAB122180897319829DEB4BFE37B888F726932AFCFB2EAD74D34A6438BBBFA8A  GraphicRunnerInstallBeta.exe
-B36501857FAE03370CDC44A0EB80A65C5DAFA68A6F19EBE4D9371E029C952EDE  GraphicRunnerInstallBeta.msi
+68F77AB293B6FD0614F6C2258731B4734D5C9178A2D7DF2711F79F16D9F5BAD4  GraphicRunnerInstallBeta.exe
+50ED5682C362CCA7015C9DC6F5DCF5B5D66B677367E355468CA446D56CE81AF3  GraphicRunnerInstallBeta.msi
 ```
 
 On Windows, verify a download with:
