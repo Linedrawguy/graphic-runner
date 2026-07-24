@@ -45,8 +45,8 @@ This public repository contains the Graphic Runner website and compiled release 
 For public beta v0.3.0:
 
 ```text
-F6818CBFF3DADF579E7C3B5F17295FED6F7E66B2963DBFF70D123814C851E94A  GraphicRunner-Next-win-x64.zip
-97256628CD742D5F64EA2C2DFB53E41988ABE6C955E21E95472E613D698D7EF9  GraphicRunner-Next-linux-x64.tar.gz
+0CD50817254FE997DE7FC589939375646852E1A9A1221DE51B67FCFC53AA14EA  GraphicRunner-Next-win-x64.zip
+E11D041BFAF18EE9899815D596AA6A12E7AB2DF829FCECD9A13604FEF85C6C1A  GraphicRunner-Next-linux-x64.tar.gz
 ```
 
 On Windows, verify a download with:
@@ -65,7 +65,7 @@ Graphic Runner operates locally and does not upload your artwork. See the licens
 
 ## Acceptable use
 
-Each download includes `README_FIRST.txt`, a plain-language use notice, and `LICENSE.txt`, the complete EULA presented for acceptance on first launch. Users are responsible for their content and may not use Graphic Runner for unlawful activity, rights infringement, counterfeiting, fraud, impersonation, abuse, exploitation, deception, or harm.
+Each download includes `README_FIRST.txt`, a plain-language use notice, `LICENSE.txt`, the complete EULA v2.2 presented for acceptance on first launch, and `THIRD-PARTY-NOTICES.txt`. Acceptance explicitly acknowledges both the notice and EULA. Users are responsible for their content and may not use Graphic Runner for unlawful activity, rights infringement, counterfeiting, fraud, impersonation, abuse, exploitation, deception, or harm. Users may share the official release link but may not redistribute, sell, rebrand, relabel, host, or pass off the application as their own.
 
 ## Support
 
