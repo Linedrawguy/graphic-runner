@@ -42,11 +42,11 @@ This public repository contains the Graphic Runner website and compiled release 
 
 ## Verify your download
 
-For public beta v0.2.0:
+For public beta v0.3.0:
 
 ```text
-CC61AA105A8932AF6B8DF20D8EBD74DA99D0B19D59822A9C86BBF045C0882D48  GraphicRunner-Next-win-x64.zip
-36A207CA7905D9E4095C3C5129CB7E09D6F0D2F99BF22ED17C356C95284E58F7  GraphicRunner-Next-linux-x64.tar.gz
+3D46625092D18AF2FBA8B7555439E295CC5AC5602795D8921F083AE56852D600  GraphicRunner-Next-win-x64.zip
+B6BCC8CE99B96985625E2C00CA405BEF0DDDC0F76361B0C0A97EC684338B1F45  GraphicRunner-Next-linux-x64.tar.gz
 ```
 
 On Windows, verify a download with:
