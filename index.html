@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ff4b12">
-  <meta name="description" content="Graphic Runner is a free offline graphics studio for high-impact text, logo, and symbol effects on Windows and Linux through Wine.">
+  <meta name="description" content="Graphic Runner is a free offline graphics studio for high-impact text, logo, symbol, and motion effects on Windows and Linux.">
   <link rel="canonical" href="https://linedrawguy.github.io/graphic-runner/">
 
   <meta property="og:type" content="website">
@@ -188,7 +188,7 @@
       <div class="nav-links">
         <a href="#install">Install notes</a>
         <a href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Feedback</a>
-        <a class="download-link" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe">Download</a>
+        <a class="download-link" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunner-Next-win-x64.zip">Download</a>
       </div>
     </nav>
   </header>
@@ -197,7 +197,7 @@
     <section class="command-card" id="top" aria-labelledby="main-title">
       <div class="terminal-line">
         <span>$ graphic-runner --start</span>
-        <span class="status">v0.0.7 public beta</span>
+        <span class="status">v0.1.0 public beta</span>
       </div>
 
       <div class="ascii-wrap">
@@ -216,7 +216,8 @@
           <p>A free offline effect studio for turning type, logos, and symbols into original alloy, atmosphere, signal, material, print-ready artwork, and more.</p>
         </div>
         <div class="actions" aria-label="Download and feedback actions">
-          <a class="button primary" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunnerInstallBeta.exe">Download beta</a>
+          <a class="button primary" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunner-Next-win-x64.zip">Windows beta</a>
+          <a class="button secondary" href="https://github.com/Linedrawguy/graphic-runner/releases/latest/download/GraphicRunner-Next-linux-x64.tar.gz">Linux beta</a>
           <a class="button secondary" href="https://forms.gle/xRCnM3ARTG7ps8CYA" target="_blank" rel="noopener">Send feedback</a>
         </div>
       </div>
@@ -232,28 +233,29 @@
 
     <section class="utility" id="install" aria-label="Installation notes">
       <details>
-        <summary><h2>Windows 10/11</h2><span>Native installer</span></summary>
+        <summary><h2>Windows 10/11</h2><span>Self-contained x64 build</span></summary>
         <div class="detail-body">
           <ol>
-            <li>Download and open <code>GraphicRunnerInstallBeta.exe</code>.</li>
-            <li>Verify its SHA-256 checksum:<span class="checksum">DAB122180897319829DEB4BFE37B888F726932AFCFB2EAD74D34A6438BBBFA8A</span></li>
+            <li>Download and extract <code>GraphicRunner-Next-win-x64.zip</code>.</li>
+            <li>Verify the ZIP's SHA-256 checksum:<span class="checksum">49619784FAB855D0E7F172893BA409A59E9C00385CC66C0CDE7084AA23870AAF</span></li>
+            <li>Open the extracted folder and run <code>GraphicRunner.Next.exe</code>.</li>
             <li>This unsigned beta may display <strong>Windows protected your PC</strong>. After verifying the checksum, select <strong>More info</strong>, confirm the app name, then select <strong>Run anyway</strong>.</li>
-            <li>Finish installation and launch Graphic Runner from its shortcut or Start menu entry.</li>
+            <li>Accept the beta license when Graphic Runner opens.</li>
           </ol>
           <p class="detail-note">Do not disable Defender or SmartScreen. Trusted code signing is the permanent fix for the warning.</p>
         </div>
       </details>
 
       <details>
-        <summary><h2>Linux</h2><span>Tested through Wine</span></summary>
+        <summary><h2>Linux x64</h2><span>Native self-contained build</span></summary>
         <div class="detail-body">
           <ol>
-            <li>Install <a href="https://flathub.org/apps/com.usebottles.bottles" target="_blank" rel="noopener">Bottles from Flathub</a> and complete its first-run setup.</li>
-            <li>Create a 64-bit <strong>Application</strong> bottle named Graphic Runner.</li>
-            <li>Choose <strong>Run Executable</strong> and select <code>GraphicRunnerInstallBeta.exe</code>.</li>
-            <li>Complete installation, then launch Graphic Runner from the bottle's <strong>Programs</strong> list.</li>
+            <li>Download <code>GraphicRunner-Next-linux-x64.tar.gz</code>.</li>
+            <li>Verify its SHA-256 checksum:<span class="checksum">A61A929FA5F9507BF0D9093293B6DB087303690323C481B02E0F65E0B5EBE09A</span></li>
+            <li>Extract it with <code>tar -xzf GraphicRunner-Next-linux-x64.tar.gz</code>.</li>
+            <li>Open <code>linux-x64</code>, run <code>chmod +x GraphicRunner.Next</code>, then launch <code>./GraphicRunner.Next</code>.</li>
           </ol>
-          <p class="detail-note">Direct Wine alternative: <code>wine GraphicRunnerInstallBeta.exe</code>. This is a tested compatibility setup, not a native Linux package.</p>
+          <p class="detail-note">Wine and Bottles are not required. A normal desktop session with X11 or Wayland and standard graphics libraries is required.</p>
         </div>
       </details>
     </section>
